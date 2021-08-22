@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm,amsmath,amssymb,braket,graphicx,enumitem,booktabs,multirow,booktabs,tcolorbox,wrapfig,cancel,caption}
+%\usepackage{charter}% font package
+\numberwithin{equation}{section}
+\allowdisplaybreaks
+\begin{document}
+\title{Fermion Sign Problem in Physics}
+\author{Abhirup Mukherjee}
+\date{}
+\maketitle
+A general problem in statistical mechanics is to compute thermal averages of quantities. Given the \(W\) microstates \(\left\{ \ket{j} \right\} \) and the energy values \(\left\{ E_j \right\} \) associated with them, the thermal average of a quantity \(\hat A\) is defined as
+\begin{equation}\begin{aligned}
+	\left<\hat A \right> = \frac{\sum_{j=1}^W \hat A_j f_j}{\sum_j f_j}
+\end{aligned}\end{equation}
+\(f_j, j=1,2,...,W\) is the probability of reaching the microstate \(\ket{j}\). For system with \(N\) particles, the number of microstates will go as \(2^N\), so it becomes impractical to evaluate such a summation (or integral, in the case of a continuous spectrum) naively. Classical Monte-Carlo chooses a smaller set of microstates \(\left\{ \ket{i} \right\} \), according to the distribution \(f\), and then approximates the average as
+\begin{equation}\begin{aligned}
+	\left<\hat A \right> \approx \frac{1}{w}\sum_{i=1}^w \hat A_i
+\end{aligned}\end{equation}
+where \(w\) is the number of chosen states, out of the \(W\) total microstates.
+
+A quantum mechanical system described by a Hamiltonian \(\mathcal{H}\) will have a similar expression for expectation values.
+\begin{equation}\begin{aligned}
+	\left<\hat A \right> = \frac{1}{ \text{Trace}\left[ e^{-\beta \mathcal{H}} \right]} \text{Trace}\left[ \hat A e^{-\beta \mathcal{H}} \right] = \frac{1}{Z}\text{Trace}\left[ \hat A e^{-\beta \mathcal{H}} \right]
+\end{aligned}\end{equation}
+\(W\) here stands for the dimension of the Hilbert space this problem lives in, and \(j\) labels some complete basis in this space. To use Monte-Carlo, we need to put the partition function \(Z\) into a "classical form".
+\begin{equation}\begin{aligned}
+	&\sum_{j=1}^W \bra{j} e^{-\beta \mathcal{H}}\ket{j}\\
+	&= \sum_{n=0}^\infty \sum_{j=1}^W \frac{1}{n!} \left( -\beta \right)^n \bra{j} \mathcal{H}^n \ket{j}\\
+	&= \sum_{n=0}^\infty \sum_{j=1}^W \sum_{j_1,j_2,...j_{n-1}=1}^W \frac{1}{n!} \left( -\beta \right)^n \bra{j} \mathcal{H} \ket{j_1}\bra{j_1}\mathcal{H}\ket{j_2}\bra{j_2}\mathcal{H}\ket{j_3}...\bra{j_{n-1}}\mathcal{H}\ket{j}\\
+	&= \sum_{n=0}^\infty\sum_{j,j_1,j_2,...j_{n-1}=1}^W \frac{1}{n!} \left( -\beta \right)^n \mathcal{H}_{j,j_1}\mathcal{H}_{j_1,j_2}...\mathcal{H}_{j_{n-1},j}\\
+\end{aligned}\end{equation}
+The sums over \(j_i\) are all sums over all the microstates. If we consider the global summation \(\sum_{j,j_1,j_2,...j_{n-1}=1}^W\), the string \(j,j_1,j_2,...j_{n-1}\) in a particular term of the summation denotes a set of \(n\) microstates of the system. For example, if we are in a two-state problem, a possible term of the summation would like \(1,1,0,1,0,0,0,1\). The number of states in the string is decided by the index \(n\). The collective summation 
+\begin{equation}\begin{aligned}
+	\sum_{n=0}^\infty\sum_{j,j_1,j_2,...j_{n-1}=1}^W
+\end{aligned}\end{equation}
+is thus a summation over such strings of varying lengths. We denote such a string by \(s\). The partition function can then be written as
+\begin{equation}\begin{aligned}
+	\label{class}
+	Z = \sum_s f_s
+\end{aligned}\end{equation}
+where \(s\equiv j,j_1,j_2,...j_{n-1}, \forall\;j_i \in \left[ 1, W \right] \text{ and } \forall\;n \in \left[ 0, \infty \right] \), and 
+\begin{equation}\begin{aligned}
+	f_s = \frac{1}{n!} \left( -\beta \right)^n\mathcal{H}_{j,j_1}\mathcal{H}_{j_1,j_2}...\mathcal{H}_{j_{n-1},j}
+\end{aligned}\end{equation}
+In the form eq.~\ref{class}, the quantum-mechanical trace resembles the classical partition function. The numerator of the expectation value can also be written in a similar fashion:
+\begin{equation}\begin{aligned}
+	\text{Trace}\left[\hat A e^{-\beta \mathcal{H}}\right] &= \sum_{j=1}^W \bra{j} \hat A e^{-\beta \mathcal{H}}\ket{j}\\
+							       &= \sum_{n=0}^\infty\sum_{j,j_1,j_2,...j_{n}=1}^W \frac{1}{n!} \left( -\beta \right)^n A_{jj_1}\mathcal{H}_{j_1 j_2}\mathcal{H}_{j_2j_3}...\mathcal{H}_{j_{n}j}\\
+							       &= \sum_{s} A_{s}f_s\\
+\end{aligned}\end{equation}
+
+\end{document}

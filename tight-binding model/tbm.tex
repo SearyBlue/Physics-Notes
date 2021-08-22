@@ -1,0 +1,120 @@
+% !TEX TS-program = xelatex
+\documentclass[12pt]{article}
+\usepackage{amsthm,amsmath,amssymb,braket,graphicx,enumitem,booktabs,multirow,booktabs,wrapfig,cancel,caption,fancyhdr,relsize,textpos,booktabs,tocbibind,titlesec,color}
+\usepackage[top=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[pdfusetitle]{hyperref}
+\renewcommand{\arraystretch}{2}
+\setlength\delimitershortfall{-2pt}
+\setcounter{tocdepth}{1}
+\DeclareMathOperator{\sech}{sech}
+\raggedbottom
+\numberwithin{equation}{section}
+\allowdisplaybreaks
+
+\title{The Tight-Binding Model}
+\author{}
+\begin{document}
+\maketitle
+This method deals with the situation in which the local atomic orbitals are a good approximation to the full problem, and fairly good solutions can be obtained by adding corrections to the local wavefunctions. We start by separating the full Hamiltonian into a local and a non-local piece:
+\begin{equation}\begin{aligned}
+	H = \sum_i H_i + H_\text{nloc}
+\end{aligned}\end{equation}
+$H_i$ is an operator that acts only very close to the real space lattice site \(i\), and is zero otherwise. A very extreme and simple example would be a chemical potential term:
+\begin{equation}\begin{aligned}
+	H_i = \mu \sum_{\sigma} \hat n_{i\sigma}
+\end{aligned}\end{equation}
+where \(\hat n_{i\sigma} = c^\dagger_{i \sigma}c_{i \sigma}\) is thee number operator for the $i^\text{th}$ site.
+A more non-trivial example would be an extremely localised Coulomb repulsion term:
+\begin{equation}\begin{aligned}
+	H_i =  U\hat n_{i \uparrow}\hat n_{i \downarrow}
+\end{aligned}\end{equation}
+The non-local piece $H_\text{nloc}$ connects multiple sites. A simple example of such a term would be a nearest-neighbour hopping:
+\begin{equation}\begin{aligned}
+	H_\text{nloc} =  -t\sum_{i\sigma} \left(c^\dagger_{i\sigma}c_{i+1,\sigma} + \text{h.c.}\right)
+\end{aligned}\end{equation}
+In general, let $\left\{\ket{\Psi^n_i}\right\}$ be the set of eigenstates of the local Hamiltonian \(H_i\):
+\begin{equation}\begin{aligned}
+	H_i \ket{\Psi_i^n} = E^n_i\ket{\Psi_\text{loc}^n}
+\end{aligned}\end{equation}
+We will drop the superscript $i$ on the energy eigenvalue because they are actually independent of $i$ on account of translation invariance.
+We assume that all the \(\psi_i^n(\vec r - \vec R_i)\) are very local; that is, they are non-zero only very close to their specific lattice sites \(\left( \vec r - \vec R_i \sim 0 \right) \). More specifically, we assume that \(\psi_i^n(\vec r)\) becomes zero when $H_\text{nloc}(\vec r - \vec R_i)$ is non-zero. In such a situation, \(\psi_i^n(\vec r - \vec R_i)\) becomes a very good wavefunction of the full Hamiltonian:
+\begin{equation}\begin{aligned}
+	H(\vec r)\psi_i^n(\vec r - \vec R_i) &= \left[\sum_i H_i(\vec r) + H_\text{nloc}(\vec r)\right] \psi_i^n(\vec r - \vec R_i)\\
+					   &= \begin{cases}
+						   H_i(\vec r)\psi_i^n(\vec r - \vec R_i) = E^n\psi_i^n(\vec r - \vec R_i) & \text{ when }\vec r \sim \vec R_i\\
+						   H_\text{nloc}(\vec r) \psi_i^n(\vec r - \vec R_i) = 0 & \text{ when }\vec r \nsim \vec R_i\\
+	\end{cases}
+\end{aligned}\end{equation}
+However, these wavefunctions do not satisfy Bloch's theorem. The following linear combination does:
+\begin{equation}\begin{aligned}
+	\phi^n(\vec k) = \frac{1}{\sqrt N}\sum_{i}e^{i \vec{k}\cdot\vec{R_i}}\psi^n_i(\vec r - \vec R_i)
+\end{aligned}\end{equation}
+because it can be rewritten as
+\begin{equation}\begin{aligned}
+	\phi^n(\vec k) = \frac{1}{\sqrt N}e^{i \vec{k}\cdot\vec{r}}\sum_{i}e^{-i \vec{k}\cdot\left(\vec r-\vec R_i\right)}\psi^n_i(\vec r - \vec R_i) = e^{i \vec{k}\cdot\vec{r}} u^n_{\vec k}(\vec r)
+\end{aligned}\end{equation}
+such that \(u^n_{\vec k}(\vec r)\) is translationally-invariant. The energy expectation values are
+\begin{equation}\begin{aligned}
+	\epsilon_{\vec k} = \bra{\Phi^n_{\vec k}}H\ket{\phi^n_{\vec k}} = \frac{1}{N}\sum_{ij}e^{i \vec k \cdot\left(\vec R_i - \vec R_j\right)}\bra{\Psi^n_i}H\ket{\Psi^n_j}
+\end{aligned}\end{equation}
+At this point we assume that the Hamiltonian has non-zero matrix elements for local and, at the most, nearest-neighbour terms:
+\begin{equation}\begin{aligned}
+	\bra{\Psi^n_i}H\ket{\Psi^n_j} = \alpha \delta_{ij} + \gamma \delta_{|i-j| - 1}
+\end{aligned}\end{equation}
+This gives
+\begin{equation}\begin{aligned}
+	\epsilon_{\vec k} = \alpha + \gamma\sum_{\vec e_i}e^{i \vec{ k}\cdot\vec{ e_i}}
+\end{aligned}\end{equation}
+\(\vec e_i\) runs over all vectors that connect a lattice site to its nearest neighbours. For a hypercubic lattice with spacings \(a_1, a_2, ...\), the expression becomes
+\begin{equation}\begin{aligned}
+	\epsilon_{\vec k} = \alpha + 2\gamma\sum_{i=x,y,...}\cos a_i k_i
+\end{aligned}\end{equation}
+This can also be motivated from a second-quantized Hamiltonian. The assumption of at most nearest neighbour Hamiltonian matrix elements naturally leads to the model
+\begin{equation}\begin{aligned}
+	H = -t\sum_{\left<ij\right>, \sigma}\left(c^\dagger_{i \sigma}c_{j\sigma} + \text{h.c.}\right) - \mu \hat N
+\end{aligned}\end{equation}
+\(c^\dagger_{i\sigma}\) is the Fermionic field operator that creates an electron with spin \(\sigma\) at \(\vec R_i\). Defining the Foureir transforms as
+\begin{equation}\begin{aligned}
+	c^\dagger_{\vec k\sigma} = \frac{1}{\sqrt N}\sum_{i}e^{\vec{k}\cdot\vec{R_i}}c^\dagger_{i\sigma}, && c^\dagger_{i\sigma} = \frac{1}{\sqrt N}\sum_{i}e^{-\vec{k}\cdot\vec{R_i}}c^\dagger_{\vec k, \sigma}
+\end{aligned}\end{equation}
+Using this, we can write
+\begin{equation}\begin{aligned}
+	H &= -t \frac{1}{N} \sum_{\left<ij\right>, \sigma}\sum_{\vec k \vec q}\left(e^{i\left[\vec{k}\cdot\vec{ R_i} - \vec{q}\cdot\vec{ R_j}\right]}c^\dagger_{\vec k \sigma}c_{ \vec q\sigma} + \text{h.c.}\right) - \mu \hat N\\
+	  &= -t \frac{1}{N} \frac{1}{2}\sum_{i}\sum_{j \in \text{NN of i}}\sum_{\vec k \vec q}\sum_\sigma\left(e^{i\left[\vec{k}\cdot\vec{ R_i} - \vec{q}\cdot\vec{ R_j}\right]}c^\dagger_{\vec k \sigma}c_{ \vec q\sigma} + \text{h.c.}\right) - \mu \hat N
+\end{aligned}\end{equation}
+We assume here that we are on a 2D lattice. Since $j$ sums over all NN of $i$, we can substitute 
+\begin{equation}\begin{aligned}
+	\sum_j e^{-i \vec{q}\cdot\vec{R_j}} &= e^{-i \vec{q}\cdot\left(\vec{R_i} + \vec a_x\right)} + e^{-i \vec{q}\cdot\left(\vec{R_i} - \vec a_x\right)} + e^{-i \vec{q}\cdot\left(\vec{R_i} + \vec a_y\right)} + e^{-i \vec{q}\cdot\left(\vec{R_i} - \vec a_y\right)}\\
+					    &=2e^{-i \vec{q}\cdot\vec{R_i}}\left(\cos(q_x a_x) + \cos(q_y a_y)\right) 
+\end{aligned}\end{equation}
+This gives
+\begin{equation}\begin{aligned}
+	H &= -t \frac{1}{N} \frac{1}{2}\sum_{\vec k \vec q, \sigma}\left[2\left(\cos(q_x a_x) + \cos(q_y a_y)\right)c^\dagger_{\vec k \sigma}c_{ \vec q\sigma} + \text{h.c.}\right]\sum_{i} e^{i \left( \vec k - \vec q \right)\cdot \vec R_i} - \mu \hat N\\
+	  &= -t \frac{1}{N} \sum_{\vec k \vec q, \sigma} \left(\cos(q_x a_x) + \cos(q_y a_y)\right)\left(c^\dagger_{\vec k \sigma}c_{\vec q\sigma} + \text{h.c.}\right)N\delta_{\vec k, \vec q} - \mu \hat N\\
+	  &= -2t\sum_{\vec k, \sigma}\left(\cos(k_x a_x) + \cos(k_y a_y)\right)c^\dagger_{\vec k\sigma}c_{\vec k\sigma} - \mu \hat N\\
+	  &= \sum_{k\sigma}\epsilon_k \hat n_{k\sigma}
+\end{aligned}\end{equation}
+with $\epsilon_k = -2t\left(\cos(k_x a_x) + \cos(k_y a_y)\right) - \mu$.
+
+\newpage
+\begin{equation*}\begin{aligned}
+	\eta_\text{1 to 2} &= \frac{2t}{\sqrt{t^2 + U^2/16}}\\
+	\eta_\text{1 to 3 to 2} &= \frac{2t}{t^2 + \omega^2 \sqrt\frac{U}{4t}}\\
+\end{aligned}\end{equation*}
+
+
+
+
+
+
+
+
+
+
+
+
+\maketitle
+\bibliographystyle{unsrt}
+\bibliography{notes}
+\end{document}
