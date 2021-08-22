@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex tbm"] 1629560732 "tbm.aux" "tbm.bbl" "tbm" 1629560733
+["bibtex tbm"] 1629646258 "tbm.aux" "tbm.bbl" "tbm" 1629646260
   "/usr/share/texmf-dist/bibtex/bst/base/unsrt.bst" 1617738065 18030 1376b4b231b50c66211e47e42eda2875 ""
   "notes.bib" 0 -1 0 ""
-  "tbm.aux" 1629560733 685 3c517339ba563ad486ccf3b8cebc3b12 "xelatex"
+  "tbm.aux" 1629646258 1225 541e88105189e7fe1c23378522d623d7 "xelatex"
   (generated)
-  "tbm.bbl"
   "tbm.blg"
-["xdvipdfmx"] 1629560733 "tbm.xdv" "tbm.pdf" "tbm" 1629560733
-  "tbm.xdv" 1629560733 15532 f5065aab0775597aa6d4e74a130018d5 "xelatex"
+  "tbm.bbl"
+["xdvipdfmx"] 1629646259 "tbm.xdv" "tbm.pdf" "tbm" 1629646260
+  "tbm.xdv" 1629646258 27476 abb90d2149ba89cac5a76a28f2046589 "xelatex"
   (generated)
   "tbm.pdf"
-["xelatex"] 1629560732 "tbm.tex" "tbm.xdv" "tbm" 1629560733
+["xelatex"] 1629646258 "tbm.tex" "tbm.xdv" "tbm" 1629646260
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1617738065 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1617738065 1004 54797486969f23fa377b128694d548df ""
@@ -29,10 +29,12 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1617738065 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1617738065 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1617738065 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm" 1617738065 12088 d750ac78274fa7c9f73ba09914c04f8a ""
   "/usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm" 1617738065 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
   "/usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm" 1617738065 12156 ca1ae6a3c8564e89597f1f993fba1608 ""
   "/usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm" 1617738065 12048 c1068d0f4772be9b0ec447692e1d6d82 ""
   "/usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm" 1617738065 12064 a35db870f0b76c338d749c56dc030ef5 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm" 1617738065 17144 271aaf9ebb339934b04110dc5211fba4 ""
   "/usr/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1617738065 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1617738065 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/share/texmf-dist/tex/generic/bitset/bitset.sty" 1617738065 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -105,12 +107,15 @@
   "/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1621766596 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1626341056 5486151 4114a5cefe9f27ef84d5fb8b60c07458 ""
-  "tbm.aux" 1629560733 685 3c517339ba563ad486ccf3b8cebc3b12 "xelatex"
+  "Fsurf.png" 1629643521 100695 9600b7312149c495837b6bac60d716a4 ""
+  "contours.pdf" 1629634958 28785 e5496a9f8c23628bd9221ae3c28ebedd ""
+  "sublattice.png" 1629635987 53396 0755ba8fc4944966e93b3bd08ac2de2d ""
+  "tbm.aux" 1629646258 1225 541e88105189e7fe1c23378522d623d7 "xelatex"
   "tbm.bbl" 0 -1 0 "bibtex tbm"
-  "tbm.out" 1629560733 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "tbm.tex" 1629560732 7513 a4e3a7dbcc0f2fbaa7d77af7f3009adb ""
+  "tbm.out" 1629646258 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "tbm.tex" 1629646257 13978 ca7311c211042836fc04591533146279 ""
   (generated)
+  "tbm.out"
+  "tbm.xdv"
   "tbm.log"
   "tbm.aux"
-  "tbm.xdv"
-  "tbm.out"

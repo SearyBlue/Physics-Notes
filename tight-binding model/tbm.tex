@@ -16,6 +16,7 @@
 \author{}
 \begin{document}
 \maketitle
+\section*{Single-particle Hamiltonian viewpoint}
 This method deals with the situation in which the local atomic orbitals are a good approximation to the full problem, and fairly good solutions can be obtained by adding corrections to the local wavefunctions. We start by separating the full Hamiltonian into a local and a non-local piece:
 \begin{equation}\begin{aligned}
 	H = \sum_i H_i + H_\text{nloc}
@@ -56,7 +57,7 @@ because it can be rewritten as
 \end{aligned}\end{equation}
 such that \(u^n_{\vec k}(\vec r)\) is translationally-invariant. The energy expectation values are
 \begin{equation}\begin{aligned}
-	\epsilon_{\vec k} = \bra{\Phi^n_{\vec k}}H\ket{\phi^n_{\vec k}} = \frac{1}{N}\sum_{ij}e^{i \vec k \cdot\left(\vec R_i - \vec R_j\right)}\bra{\Psi^n_i}H\ket{\Psi^n_j}
+	\xi_{\vec k} = \bra{\Phi^n_{\vec k}}H\ket{\phi^n_{\vec k}} = \frac{1}{N}\sum_{ij}e^{i \vec k \cdot\left(\vec R_i - \vec R_j\right)}\bra{\Psi^n_i}H\ket{\Psi^n_j}
 \end{aligned}\end{equation}
 At this point we assume that the Hamiltonian has non-zero matrix elements for local and, at the most, nearest-neighbour terms:
 \begin{equation}\begin{aligned}
@@ -64,13 +65,21 @@ At this point we assume that the Hamiltonian has non-zero matrix elements for lo
 \end{aligned}\end{equation}
 This gives
 \begin{equation}\begin{aligned}
-	\epsilon_{\vec k} = \alpha + \gamma\sum_{\vec e_i}e^{i \vec{ k}\cdot\vec{ e_i}}
+	\xi_{\vec k} = \alpha + \gamma\sum_{\vec e_i}e^{i \vec{ k}\cdot\vec{ e_i}}
 \end{aligned}\end{equation}
 \(\vec e_i\) runs over all vectors that connect a lattice site to its nearest neighbours. For a hypercubic lattice with spacings \(a_1, a_2, ...\), the expression becomes
 \begin{equation}\begin{aligned}
-	\epsilon_{\vec k} = \alpha + 2\gamma\sum_{i=x,y,...}\cos a_i k_i
+	\xi_{\vec k} = \alpha + 2\gamma\sum_{i=x,y,...}\cos a_i k_i
 \end{aligned}\end{equation}
-This can also be motivated from a second-quantized Hamiltonian. The assumption of at most nearest neighbour Hamiltonian matrix elements naturally leads to the model
+\newpage
+\section*{Second-quantized Hamiltonian viewpoint}
+The tight-binding model can also be developed starting from a second-quantized Hamiltonian. Here we work with field operators:
+\begin{equation}\begin{aligned}
+	c_{\vec k}, c_{\vec q}^\dagger: \left\{ c_{\vec k}, c^\dagger_{\vec q} \right\} = \delta_{kq}
+\end{aligned}\end{equation}
+\(i,j\) are some quantum numbers. For example, \(c^\dagger(\vec r)\) creates an electron at position \(\vec r\).
+\\\\
+The assumption of at most nearest neighbour Hamiltonian matrix elements naturally leads to the model
 \begin{equation}\begin{aligned}
 	H = -t\sum_{\left<ij\right>, \sigma}\left(c^\dagger_{i \sigma}c_{j\sigma} + \text{h.c.}\right) - \mu \hat N
 \end{aligned}\end{equation}
@@ -93,15 +102,107 @@ This gives
 	H &= -t \frac{1}{N} \frac{1}{2}\sum_{\vec k \vec q, \sigma}\left[2\left(\cos(q_x a_x) + \cos(q_y a_y)\right)c^\dagger_{\vec k \sigma}c_{ \vec q\sigma} + \text{h.c.}\right]\sum_{i} e^{i \left( \vec k - \vec q \right)\cdot \vec R_i} - \mu \hat N\\
 	  &= -t \frac{1}{N} \sum_{\vec k \vec q, \sigma} \left(\cos(q_x a_x) + \cos(q_y a_y)\right)\left(c^\dagger_{\vec k \sigma}c_{\vec q\sigma} + \text{h.c.}\right)N\delta_{\vec k, \vec q} - \mu \hat N\\
 	  &= -2t\sum_{\vec k, \sigma}\left(\cos(k_x a_x) + \cos(k_y a_y)\right)c^\dagger_{\vec k\sigma}c_{\vec k\sigma} - \mu \hat N\\
-	  &= \sum_{k\sigma}\epsilon_k \hat n_{k\sigma}
+	  &= \sum_{k\sigma}\xi_k \hat n_{k\sigma}
 \end{aligned}\end{equation}
-with $\epsilon_k = -2t\left(\cos(k_x a_x) + \cos(k_y a_y)\right) - \mu$.
+with $\xi_k = -2t\left(\cos(k_x a_x) + \cos(k_y a_y)\right) - \mu$. The bandwidth is \(8t\).
 
-\newpage
+\section*{Constant-energy contours}
+The contours of constant energy \(E\) are defined by
+\begin{equation}\begin{aligned}
+	\xi_k = E
+\end{aligned}\end{equation}
+The Fermi surface is defined as the set of points in $k-$space on the contour at zero energy:
+\begin{equation}\begin{aligned}
+	\xi_k = 0 \implies \cos(k_x a_x) + \cos(k_y a_y) = -\frac{\mu}{2t}
+\end{aligned}\end{equation}
+The case of \(\mu=0\) results in a "diamond-shaped Fermi surface":
+\begin{equation}\begin{aligned}
+	&\cos(k_x a_x) + \cos(k_y a_y) = 0\\
+	\implies &\cos(\pm k_x a_x) = \cos(\pi \pm k_y a_y) \\
+	\implies & \begin{cases}
+		k_x + k_y = \frac{\pi}{a}\\
+		k_x - k_y = \frac{\pi}{a}\\
+		-k_x + k_y = \frac{\pi}{a}\\
+		-k_x - k_y = \frac{\pi}{a}\\
+	\end{cases}
+\end{aligned}\end{equation}
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\textwidth]{./contours.pdf}
+	\caption{Contours of constant energy on the 2D tight-binding lattice model, at half-filling \((\mu = 0)\). The red lines form the Fermi surface, while the blue lines form other contours.}
+\end{figure}
+\section*{Half-filling}
+\begin{minipage}{0.5\textwidth}
+	The case of \(\mu=0\) is often referred to as half-filling, because at this parameter value, the Hamiltonian is particle-hole symmetric. This means that the Hamiltonian remains invariant under a particle-hole transformation. To see this on the 2D lattice, we visualize the lattice as the sum of two sub-lattices, A and B. A site on sublattice A (pink in figure) only has sites of sublattice B (green in figure) as its nearest-neighbour, and vice-versa. We will represent the Fermionic operators for sublattice \(A\) with \(a,a^\dagger\) ad those of sublattice \(B\) with \(b, b^\dagger\).
+\end{minipage}
+\hspace*{\fill}
+\begin{minipage}{0.4\textwidth}
+	\centering
+	\includegraphics[width=0.8\textwidth]{./sublattice.png}
+	\captionof{figure}{2D lattice composed of two sublattices. Pink indicates sites on sublattice A and green indicates sites on sublattice B.}
+\end{minipage}
+\\\\
+With this in mind, the tight-binding Hamiltonian can be written as
+\begin{equation}\begin{aligned}
+	H = -t\sum_{i \in A}\sum_{j \in \text{NN of i}} \sum_\sigma\left(a^\dagger_{i \sigma}b_{j\sigma} + \text{h.c.}\right) - \mu \hat N
+\end{aligned}\end{equation}
+Now we define a particle-hole transformation \(a \to a^\dagger, b \to -b^\dagger\). The hopping part remains unchanged by this transformation:
+\begin{equation}\begin{aligned}
+	a^\dagger_{i \sigma}b_{j\sigma} + b^\dagger_{j\sigma}a_{i\sigma} \to -a_{i\sigma}b^\dagger_{j\sigma} - b_{j\sigma}a^\dagger_{i\sigma} = a^\dagger_{i \sigma}b_{j\sigma} + b^\dagger_{j\sigma}a_{i\sigma}
+\end{aligned}\end{equation}
+The total number part transforms as
+\begin{equation}\begin{aligned}
+	\mu \hat N = \mu\left(\sum_{i\in A,\sigma}a^\dagger_{i\sigma}a_{i\sigma} + \sum_{j\in B,\sigma}b^\dagger_{j\sigma}b_{j\sigma}\right) \to -\mu\hat N + \text{constant}
+\end{aligned}\end{equation}
+This term will be invariant when
+\begin{equation}\begin{aligned}
+	\mu \hat N = -\mu\hat N \implies \mu = 0
+\end{aligned}\end{equation}
+
+\section*{Electronic differentiation and nesting at half-filling}
+\begin{minipage}{0.5\textwidth}
+	The half-filled Fermi surface has two sets of high-symmetry points. The points at the four corners are referred to as the \textit{antinodal points}, while those at the centers of the four arms are referred to as the \textit{nodal points}. The dispersion behaves differently near the two sets of points: near the nodes, it is massless Dirac-like, while near the antinodes, it becomes hyperbolic.
+\end{minipage}
+\hspace*{\fill}
+\begin{minipage}{0.4\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{./Fsurf.png}
+\end{minipage}
+\\\\
 \begin{equation*}\begin{aligned}
-	\eta_\text{1 to 2} &= \frac{2t}{\sqrt{t^2 + U^2/16}}\\
-	\eta_\text{1 to 3 to 2} &= \frac{2t}{t^2 + \omega^2 \sqrt\frac{U}{4t}}\\
+	\text{antinodes } \to \left(ak_x, ak_y\right) = \begin{cases}
+\left(0, \pi \right), \left(\pi, 0 \right)\\
+\left(0, -\pi \right), \left(-\pi, 0\right)
+	\end{cases}\\
+		\text{nodes } \to \left(ak_x, ak_y\right) = \begin{cases}
+		\left(\frac{\pi}{2}, \frac{\pi}{2} \right), \left(-\frac{\pi}{2}, -\frac{\pi}{2}\right)\\
+		\left(\frac{\pi}{2}, -\frac{\pi}{2} \right), \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)
+	\end{cases}
 \end{aligned}\end{equation*}
+The dispersion \(\epsilon_k = -2t\left(\cos(k_x a_x) + \cos(k_y a_y)\right)\) near the nodes and antinodes can be obtained by expanding the cosines in Taylor series about those points. Near the nodes, we have
+\begin{equation}\begin{aligned}
+	ak \sim \frac{\pi}{2} \implies \cos(ak) \sim \left(ak - \frac{\pi}{2}\right)(-1)
+\end{aligned}\end{equation}
+which gives
+\begin{equation}\begin{aligned}
+	\epsilon_k \vert_\text{node} \sim 2t \left(a_x k_x + a_y k_y\right)
+\end{aligned}\end{equation}
+\textit{The dispersion becomes linear near the nodes.} Near one of the antinodes, we have \(k_x a_x \sim \pi, k_y a_y \sim 0\), so
+\begin{equation}\begin{aligned}
+	\cos (a_x k_x) &\sim -1 + \frac{1}{2}\left( \pi - a_x k_x \right)^2\\
+	\cos (a_y k_y) &\sim 1 - \frac{1}{2}\left(a_y k_y \right)^2\\
+\end{aligned}\end{equation}
+such that
+\begin{equation}\begin{aligned}
+	\epsilon_k \vert_\text{antinode} \sim t \left[\left(a_y k_y \right)^2 - \left( \pi - a_x k_x \right)^2\right]
+\end{aligned}\end{equation}
+which shows that the \textit{dispersion becomes hyperbolic near the antinodal points}.
+\\\\
+\textit{Nesting} refers to the situation where a single vector in the reciprocal lattice vector space (momentum space) connects large patches of the Fermi surface. For the case of a half-filled Fermi surface, the momentum vector \(\vec Q = \frac{1}{a}\left( \frac{\pi}{2}, \frac{\pi}{2}\right)\) connects two whole arms of the Fermi surface. If there is some scattering mechanism in the theory that connects states lying at momenta \(k\) and \(k+Q\), there will be terms in perturbation theory that go as
+\begin{equation}\begin{aligned}
+	\frac{1}{\xi_{\vec k} - \xi_{\vec k + \vec Q}}
+\end{aligned}\end{equation}
+Since \(\vec Q\) connects a large number of points on the Fermi surface, there will be many choices such that \(\vec k\) and \(\vec k + \vec Q\) lie on the Fermi surface, and are hence degenerate states. The presence of the nesting vector \(\vec Q\) thus leads to a very high static structure factor for such scattering processes between degenerate states.
 
 
 
@@ -109,12 +210,6 @@ with $\epsilon_k = -2t\left(\cos(k_x a_x) + \cos(k_y a_y)\right) - \mu$.
 
 
 
-
-
-
-
-
-\maketitle
 \bibliographystyle{unsrt}
 \bibliography{notes}
 \end{document}

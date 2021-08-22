@@ -744,6 +744,8 @@ INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -765,6 +767,16 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 OUTPUT tbm.xdv
+INPUT ./contours.pdf
+INPUT ./contours.pdf
+INPUT ./contours.pdf
+INPUT ./sublattice.png
+INPUT ./sublattice.png
+INPUT ./sublattice.png
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
+INPUT ./Fsurf.png
+INPUT ./Fsurf.png
+INPUT ./Fsurf.png
 INPUT tbm.aux
 INPUT ./tbm.out
 INPUT ./tbm.out

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/Arch Linux) (preloaded format=xelatex 2021.7.15)  21 AUG 2021 21:15
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/Arch Linux) (preloaded format=xelatex 2021.7.15)  22 AUG 2021 21:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -454,19 +454,58 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-] [2] [3]
+] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 79--83
+
+ []
+
+[3]
+File: ./contours.pdf Graphic file (type pdf)
+<use ./contours.pdf>
+File: ./sublattice.png Graphic file (type bmp)
+<./sublattice.png>
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 142.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--146
+
+ []
+
+[4]
+File: ./Fsurf.png Graphic file (type bmp)
+<./Fsurf.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--172
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 198--202
+
+ []
+
+[6]
 No file tbm.bbl.
-[4] (./tbm.aux)
+[7] (./tbm.aux)
 Package rerunfilecheck Info: File `tbm.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11905 strings out of 476919
- 176099 string characters out of 5827674
- 499288 words of memory out of 5000000
- 31730 multiletter control sequences out of 15000+600000
- 426035 words of font info for 63 fonts, out of 8000000 for 9000
+ 11936 strings out of 476919
+ 176573 string characters out of 5827674
+ 500288 words of memory out of 5000000
+ 31754 multiletter control sequences out of 15000+600000
+ 436310 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 71i,15n,77p,447b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,15n,77p,599b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tbm.xdv (4 pages, 15532 bytes).
+Output written on tbm.xdv (7 pages, 27476 bytes).
