@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/Arch Linux) (preloaded format=xelatex 2021.7.28)  23 AUG 2021 11:32
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/Arch Linux) (preloaded format=xelatex 2021.7.28)  23 AUG 2021 18:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -512,4 +512,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  71i,15n,77p,599b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tbm.xdv (10 pages, 36264 bytes).
+Output written on tbm.xdv (10 pages, 36160 bytes).
