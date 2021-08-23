@@ -12,11 +12,11 @@
 \numberwithin{equation}{section}
 \allowdisplaybreaks
 
-\title{The Tight-Binding Model}
+\title{The Tight-Binding Model on the 2D Lattice\vspace*{-30pt}}
 \author{}
 \begin{document}
 \maketitle
-\section*{Single-particle Hamiltonian viewpoint}
+\subsection*{Single-particle Hamiltonian viewpoint}
 This method deals with the situation in which the local atomic orbitals are a good approximation to the full problem, and fairly good solutions can be obtained by adding corrections to the local wavefunctions. We start by separating the full Hamiltonian into a local and a non-local piece:
 \begin{equation}\begin{aligned}
 	H = \sum_i H_i + H_\text{nloc}
@@ -72,7 +72,7 @@ This gives
 	\xi_{\vec k} = \alpha + 2\gamma\sum_{i=x,y,...}\cos a_i k_i
 \end{aligned}\end{equation}
 \newpage
-\section*{Second-quantized Hamiltonian viewpoint}
+\subsection*{Second-quantized Hamiltonian viewpoint}
 The tight-binding model can also be developed starting from a second-quantized Hamiltonian. Here we work with field operators:
 \begin{equation}\begin{aligned}
 	c_{\vec k}, c_{\vec q}^\dagger: \left\{ c_{\vec k}, c^\dagger_{\vec q} \right\} = \delta_{kq}
@@ -105,8 +105,8 @@ This gives
 	  &= \sum_{k\sigma}\xi_k \hat n_{k\sigma}
 \end{aligned}\end{equation}
 with $\xi_k = -2t\left(\cos(k_x a_x) + \cos(k_y a_y)\right) - \mu$. The bandwidth is \(8t\).
-
-\section*{Constant-energy contours}
+\newpage
+\subsection*{Constant-energy contours}
 The contours of constant energy \(E\) are defined by
 \begin{equation}\begin{aligned}
 	\xi_k = E
@@ -131,7 +131,9 @@ The case of \(\mu=0\) results in a "diamond-shaped Fermi surface":
 	\includegraphics[width=0.8\textwidth]{./contours.pdf}
 	\caption{Contours of constant energy on the 2D tight-binding lattice model, at half-filling \((\mu = 0)\). The red lines form the Fermi surface, while the blue lines form other contours.}
 \end{figure}
-\section*{Half-filling}
+
+\newpage
+\subsection*{Half-filling}
 \begin{minipage}{0.5\textwidth}
 	The case of \(\mu=0\) is often referred to as half-filling, because at this parameter value, the Hamiltonian is particle-hole symmetric. This means that the Hamiltonian remains invariant under a particle-hole transformation. To see this on the 2D lattice, we visualize the lattice as the sum of two sub-lattices, A and B. A site on sublattice A (pink in figure) only has sites of sublattice B (green in figure) as its nearest-neighbour, and vice-versa. We will represent the Fermionic operators for sublattice \(A\) with \(a,a^\dagger\) ad those of sublattice \(B\) with \(b, b^\dagger\).
 \end{minipage}
@@ -159,7 +161,8 @@ This term will be invariant when
 	\mu \hat N = -\mu\hat N \implies \mu = 0
 \end{aligned}\end{equation}
 
-\section*{Electronic differentiation and nesting at half-filling}
+\newpage
+\subsection*{Electronic differentiation and nesting at half-filling}
 \begin{minipage}{0.5\textwidth}
 	The half-filled Fermi surface has two sets of high-symmetry points. The points at the four corners are referred to as the \textit{antinodal points}, while those at the centers of the four arms are referred to as the \textit{nodal points}. The dispersion behaves differently near the two sets of points: near the nodes, it is massless Dirac-like, while near the antinodes, it becomes hyperbolic.
 \end{minipage}
@@ -204,12 +207,67 @@ which shows that the \textit{dispersion becomes hyperbolic near the antinodal po
 \end{aligned}\end{equation}
 Since \(\vec Q\) connects a large number of points on the Fermi surface, there will be many choices such that \(\vec k\) and \(\vec k + \vec Q\) lie on the Fermi surface, and are hence degenerate states. The presence of the nesting vector \(\vec Q\) thus leads to a very high static structure factor for such scattering processes between degenerate states.
 
+\newpage
+\subsection*{van Hove singularity: Logarithmic divergence of the density of states}
+We will now demonstrate how the density of states (DOS) diverges logarithmically near the antinodes. The DOS at an energy $E$ is given by
+\begin{equation}\begin{aligned}
+	\rho(E) = \frac{1}{4\pi^2}\int_{S(E)} \frac{dS}{|\vec \nabla \epsilon_{\vec{k}}|}
+\end{aligned}\end{equation}
+The integral is over the surface \(S(E)\) of constant energy $E$. Henceforth, for simplicity, we will assume \(a=1\). Near the antinodal point \(\left(\pi, 0\right) \), we can approximate the dispersion as
+\begin{equation}\begin{aligned}
+	\epsilon_{\vec k} = t\left[k_y^2 - \left( \pi - k_x \right) ^2\right] 
+\end{aligned}\end{equation}
+Since we are integrating over a constant energy surface \(E \), we can write
+\begin{equation}\begin{aligned}
+	k_y^2 - \left( \pi - k_x \right)^2 = \frac{E}{2t} = R^2
+\end{aligned}\end{equation}
+We assumed here that \(E > 0\). The hyperbolic nature of the equation suggests a parametrization of the form
+\begin{equation}\begin{aligned}
+	k_y = R\sinh \phi, &&\pi - k_x = R\cosh \phi
+\end{aligned}\end{equation}
+This allows us to parametrize the integral using just one variable \(\phi\). The gradient of the dispersion is
+\begin{equation}\begin{aligned}
+	|\vec \nabla \epsilon_{\vec{k}}| = \sqrt{\left(\frac{\partial{\epsilon_{\vec k}}}{\partial{k_x}}\right)^2 + \left(\frac{\partial{\epsilon_{\vec k}}}{\partial{k_y}}\right)^2} = 2t\sqrt{\left(\pi - k_x\right)^2 + k_y^2} = 2tR\sqrt{\cosh^2\phi + \sinh^2\phi}
+\end{aligned}\end{equation}
+and the arc length can be written as
+\begin{equation}\begin{aligned}
+	dS = \sqrt{(dk_x)^2 + (dk_y)^2} = Rd\phi\sqrt{\cosh^2\phi + \sinh^2\phi}
+\end{aligned}\end{equation}
+The integral can now be written purely in terms of \(\phi\):
+\begin{equation}\begin{aligned}
+	\rho(E) = \frac{1}{4\pi^2}\frac{1}{2t}\int d\phi = \frac{1}{4\pi^2}\frac{1}{2t}\left[\phi_1 - \phi_0\right] 
+\end{aligned}\end{equation}
+Note that we have accounted for only half of the integration space currently. To see this, consider the case when we are integrating over the half-filled Fermi surface, so we can assume \(\sinh \phi = \pi - \cosh \phi\). This however, would just produce the top half of the diamond, because \(\sinh \phi\) is always positive here. To get the other half, we need the other parametrization choice of 
+\begin{equation}\begin{aligned}
+	k_y = -R\sinh \phi, &&\pi - k_x = R\cosh \phi
+\end{aligned}\end{equation}
+Since both \(dS\) and the gradient involve only even functions, they will not be affected and the total integral will just be twice of what we currently have.
+\begin{equation}\begin{aligned}
+	\rho(E) = \frac{1}{4\pi^2}\frac{1}{t}\left[\phi_1 - \phi_0\right] 
+\end{aligned}\end{equation}
+We now need to figure out the integration limits \(\phi_1\) and \(\phi_0\). Since we are integrating over the first Brillouin zone, \(k_y\) ranges from \(-\pi \to \pi\), such that \(\phi\) ranges from
+\begin{equation}\begin{aligned}
+	\phi_0 = \sinh^{-1}\frac{-\pi}{R} = -\sinh^{-1}\frac{\pi}{R}\to \phi_1 =\sinh^{-1}\frac{\pi}{R}
+\end{aligned}\end{equation}
+This gives
+\begin{equation}\begin{aligned}
+	\rho(E) = \frac{1}{2t\pi^2}\sinh^{-1}\sqrt\frac{2t\pi^2}{E}
+\end{aligned}\end{equation}
+We are interested in \(E \to 0^+\), so the term in the square root will be very large. This allows us to approximate the sinh inverse as a logarithm:
+\begin{equation}\begin{aligned}
+	\sinh^{-1}(x) = \ln\left( x + \sqrt{x^2 + 1} \right) \implies \lim_{x \to \infty} \sinh^{-1}(x) = \ln 2x
+\end{aligned}\end{equation}
+For the DOS, this means
+\begin{equation}\begin{aligned}
+	\rho(E \to 0^+) \sim \frac{1}{2t\pi^2} \ln \sqrt\frac{4t\pi^2}{E} = \frac{1}{4t\pi^2}\left(\ln 4t\pi^2 - \ln E\right) 
+\end{aligned}\end{equation}
+The logarithmic divergence in the density of states is visible now. The presence of a large number of states, specially close to the Fermi surface, results in increased correlation between the electrons and might lead to instablities because of the increased scattering near the singularity.
 
-
-
-
-
-
-\bibliographystyle{unsrt}
-\bibliography{notes}
+\newpage
+\subsection*{References}
+\begin{itemize}
+	\item Solid State Physics, \textit{Ashcroft Mermin}
+	\item The Oxford Solid State Basics, \textit{Steven H. Simon}
+	\item An Introduction to the Hubbard Hamiltonian, \textit{Richard T. Scalettar}
+\end{itemize}
 \end{document}

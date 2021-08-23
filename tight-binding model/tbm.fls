@@ -1,4 +1,4 @@
-PWD /home/kirito/storage/physics_notes/tight-binding model
+PWD /home/abhirup/work/Physics-Notes/tight-binding model
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/xetex/xelatex.fmt
 INPUT tbm.tex
@@ -744,7 +744,6 @@ INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
@@ -777,6 +776,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT ./Fsurf.png
 INPUT ./Fsurf.png
 INPUT ./Fsurf.png
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ts1-lmr12.tfm
 INPUT tbm.aux
 INPUT ./tbm.out
 INPUT ./tbm.out
