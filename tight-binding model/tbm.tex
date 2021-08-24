@@ -162,7 +162,7 @@ This term will be invariant when
 \end{aligned}\end{equation}
 
 \newpage
-\subsection*{Electronic differentiation and nesting at half-filling}
+\subsection*{Problem 1. Electronic differentiation and nesting at half-filling}
 \begin{minipage}{0.5\textwidth}
 	The half-filled Fermi surface has two sets of high-symmetry points. The points at the four corners are referred to as the \textit{antinodal points}, while those at the centers of the four arms are referred to as the \textit{nodal points}. The dispersion behaves differently near the two sets of points: near the nodes, it is massless Dirac-like, while near the antinodes, it becomes hyperbolic.
 \end{minipage}
@@ -182,6 +182,14 @@ This term will be invariant when
 		\left(\frac{\pi}{2}, -\frac{\pi}{2} \right), \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)
 	\end{cases}
 \end{aligned}\end{equation*}
+\paragraph{Questions:}
+\begin{itemize}
+	\item Write down the dispersion at half-filling by substituting \(\mu=0\) and also assume \(t=1\) for simplicity. 
+	\item Expand this dispersion in a Taylor series  about \(k_x = k_y = \frac{\pi}{2}\) to get the behaviour around the nodal point. You should obtain a linear form.
+	\item Also expand this dispersion in a Taylor series  about \(k_x = \pi, k_y = 0\) to get the behaviour around the antinodal point. You should obtain a hyperbolic form.
+	\item Nesting refers to the phenomenon where a single vector in momentum space connects large parts of the Fermi surface. Can you find the momentum vector that connects either of the two parallel arms of the Fermi surface?
+\end{itemize}
+\newpage
 The dispersion \(\epsilon_k = -2t\left(\cos(k_x a_x) + \cos(k_y a_y)\right)\) near the nodes and antinodes can be obtained by expanding the cosines in Taylor series about those points. Near the nodes, we have
 \begin{equation}\begin{aligned}
 	ak \sim \frac{\pi}{2} \implies \cos(ak) \sim \left(ak - \frac{\pi}{2}\right)(-1)
@@ -208,18 +216,29 @@ which shows that the \textit{dispersion becomes hyperbolic near the antinodal po
 Since \(\vec Q\) connects a large number of points on the Fermi surface, there will be many choices such that \(\vec k\) and \(\vec k + \vec Q\) lie on the Fermi surface, and are hence degenerate states. The presence of the nesting vector \(\vec Q\) thus leads to a very high static structure factor for such scattering processes between degenerate states.
 
 \newpage
-\subsection*{van Hove singularity: Logarithmic divergence of the density of states}
-We will now demonstrate how the density of states (DOS) diverges logarithmically near the antinodes. The DOS at an energy $E$ is given by
+\subsection*{Problem 2. van Hove singularity: Logarithmic divergence of the density of states}
+The DOS at an energy $E$ is given by
 \begin{equation}\begin{aligned}
 	\rho(E) = \frac{1}{4\pi^2}\int_{S(E)} \frac{dS}{|\vec \nabla \epsilon_{\vec{k}}|}
 \end{aligned}\end{equation}
-The integral is over the surface \(S(E)\) of constant energy $E$. Henceforth, for simplicity, we will assume \(a=1\). Near the antinodal point \(\left(\pi, 0\right) \), we can approximate the dispersion as
+The integral is over the surface \(S(E)\) of constant energy $E$. Henceforth, for simplicity, we will assume \(\mu=0\) and \(a=1\). 
+\paragraph{Questions:}
+\begin{itemize}
+	\item Write down the dispersion upto second order near the antinodal point \(k_x, k_y = \pi, 0\). Then calculate the velocity \(|\vec \nabla \epsilon_{\vec{k}}|\).
+	\item Since the integration is carried out over a constant energy surface, we can equate the dispersion to the energy \(E\) which we assume to be positive. In this fashion, obtain an equation between \(k_x\) and \(k_y\). Think of a parametrization \(\pi - k_x = f(\phi), k_y = g(\phi)\) that reduces the two variables \(k_x\) and \(k_y\) to a single variable \(\phi\). [\textit{Hint: Think of hyperbolic functions}]
+	\item Express the velocity calculated previously purely in terms of \(\phi\). Also calculate the arc length \(dS = \sqrt{dk_x^2 + dk_y^2}\) in terms of \(\phi\). Substitute these into \(\rho(E)\) to obtain an integral purely in terms of \(\phi\). Convince yourself that the actual integral is double of what you currently have, because \(k_y\) is forced to have a specific sign in this parametrization. The opposite sign gives exactly the same contribution.
+	\item With the factor of \(2\), evaluate the integral between the limits \(\phi_1\) and \(\phi_0\). These limits can be obtained by substituting the boundary values of \(k_y\) into the equation \(g(\phi) = k_y\). Now take the limit of \(E \to 0^+\) to simplify the expression. [\textit{Hint: }\(\lim_{x \to \infty} \sinh(x) = \ln 2x\)]
+\end{itemize}
+
+
+
+Near the antinodal point \(\left(\pi, 0\right) \), we can approximate the dispersion as
 \begin{equation}\begin{aligned}
 	\epsilon_{\vec k} = t\left[k_y^2 - \left( \pi - k_x \right) ^2\right] 
 \end{aligned}\end{equation}
 Since we are integrating over a constant energy surface \(E \), we can write
 \begin{equation}\begin{aligned}
-	k_y^2 - \left( \pi - k_x \right)^2 = \frac{E}{2t} = R^2
+	k_y^2 - \left( \pi - k_x \right)^2 = \frac{E}{t} = R^2
 \end{aligned}\end{equation}
 We assumed here that \(E > 0\). The hyperbolic nature of the equation suggests a parametrization of the form
 \begin{equation}\begin{aligned}

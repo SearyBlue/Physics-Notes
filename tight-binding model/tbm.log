@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/Arch Linux) (preloaded format=xelatex 2021.7.28)  23 AUG 2021 18:36
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/Arch Linux) (preloaded format=xelatex 2021.7.28)  24 AUG 2021 19:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -494,22 +494,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--175
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--205
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 209--213
 
  []
 
-[6] [7] [8] [9] [10] (./tbm.aux)
+[7] [8] [9] [10] (./tbm.aux)
 Package rerunfilecheck Info: File `tbm.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11938 strings out of 476919
- 176622 string characters out of 5827674
+ 11941 strings out of 476919
+ 176670 string characters out of 5827674
  500342 words of memory out of 5000000
- 31756 multiletter control sequences out of 15000+600000
- 433670 words of font info for 66 fonts, out of 8000000 for 9000
+ 31759 multiletter control sequences out of 15000+600000
+ 436668 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  71i,15n,77p,599b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tbm.xdv (10 pages, 36160 bytes).
+Output written on tbm.xdv (10 pages, 39692 bytes).
