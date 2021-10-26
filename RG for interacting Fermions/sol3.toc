@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Summary of Renormalization Group}{2}{section.1}%
+\contentsline {section}{\numberline {2}Setting up the problem of interacting fermions}{4}{section.2}%
+\contentsline {section}{\numberline {3}Noninteracting fixed point}{6}{section.3}%
+\contentsline {section}{\numberline {4}Quadratic interaction: tree-level RG}{7}{section.4}%
+\contentsline {section}{\numberline {5}Quartic interaction: tree-level RG}{8}{section.5}%
+\contentsline {section}{\numberline {6}Quartic interaction: 1 loop}{14}{section.6}%
+\contentsline {subsection}{\numberline {6.1}ZS diagram}{14}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Contribution to \(V_1\) from ZS diagram}{15}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Contribution to \(V_2\) from ZS diagram}{15}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}ZS\(^\prime \) diagram}{18}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}BCS diagram}{18}{subsection.6.3}%
