@@ -252,11 +252,11 @@ The second term, \(\mathbf{k_3} - \mathbf{k_2} - \mathbf{k_1}\), is of order at 
 	(k_4)_\mathrm{max} &= k_F + |\mathbf{k_3} - \mathbf{k_2} - \mathbf{k_1}|_\mathrm{max} - k_F = |\mathbf{k_3} - \mathbf{k_2} - \mathbf{k_1}|_\mathrm{max}\\
 	\implies |\mathbf{k_3} - \mathbf{k_2} - \mathbf{k_1}|_\mathrm{max} &= (k_4)_\mathrm{max} = \Lambda
 \end{aligned}\end{equation}
-The only situation in which this second term can be comparable to the first term (of order \(k_F\)) is when
+The only situation in which this second term can be comparable to the first term is when both are of order \(\Lambda\), but for such values, \(|k_4|\) will be of the order of \(k_F\):
 \begin{equation}\begin{aligned}
-\Lambda \sim k_F
+	|k_4| \sim |2\Lambda - k_F| \sim |k_4|
 \end{aligned}\end{equation}
-In such a situation, \(k_4\) will also be of the same order: \(k_4 \sim k_F + \Lambda - k_F \sim k_F\). However, from the exponential decay, we know that the only \(k_4\) that can survive are the ones in the range \(k_4 \ll \Lambda\). Therefore, we can ignore such cases, and assume that the second term in eq.~\ref{k4} can always be neglected when compared to the first:
+Such cases will be suppressed by the exponential factor. Therefore, we can ignore such cases, and assume that the second term in eq.~\ref{k4} can always be neglected when compared to the first:
 \begin{equation}\begin{aligned}
 	k_4 \approx k_F\left|\hat K_3 - \hat K_2 - \hat K_1\right| - k_F
 \end{aligned}\end{equation}

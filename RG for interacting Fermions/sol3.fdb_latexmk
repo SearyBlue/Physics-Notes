@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1635258873 "sol3.tex" "sol3.pdf" "sol3" 1635258874
+["pdflatex"] 1635309791 "sol3.tex" "sol3.pdf" "sol3" 1635309793
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1440.tfm" 1617738065 1536 3290a75021d32d016616fe527bc9884c ""
@@ -102,13 +102,13 @@
   "figures/term3.pdf" 1635225468 21169 37b2618b12496b67dc64dd3602e42022 ""
   "figures/term6.pdf" 1635241371 10643 debbf3f0e7cc2daed0b9024fb06a155e ""
   "figures/tree_quadratic.pdf" 1635251830 4768 6204de799bef7f9a30a96db7f51b47f2 ""
-  "sol3.aux" 1635258874 6846 5ccb17958a2d878fc1ed0426cc4d763e "pdflatex"
-  "sol3.out" 1635258874 2164 985fe4a4de890ca6e55e216bf3f7b2cb "pdflatex"
-  "sol3.tex" 1635258871 44570 e3cca4582fd7da28a835108c4bc2f45c ""
-  "sol3.toc" 1635258874 1014 8a8b686d7cc7bb2c52e79c7365d88e04 "pdflatex"
+  "sol3.aux" 1635309793 6846 5ccb17958a2d878fc1ed0426cc4d763e "pdflatex"
+  "sol3.out" 1635309793 2164 985fe4a4de890ca6e55e216bf3f7b2cb "pdflatex"
+  "sol3.tex" 1635309791 44491 5a7538f93f66e5dcebc438257c6b5d6c ""
+  "sol3.toc" 1635309793 1014 8a8b686d7cc7bb2c52e79c7365d88e04 "pdflatex"
   (generated)
-  "sol3.out"
+  "sol3.aux"
   "sol3.toc"
   "sol3.log"
-  "sol3.aux"
   "sol3.pdf"
+  "sol3.out"
