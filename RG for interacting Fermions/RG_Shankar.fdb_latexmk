@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1635325238 "sol3.tex" "sol3.pdf" "sol3" 1635325239
+["pdflatex"] 1635326422 "RG_Shankar.tex" "RG_Shankar.pdf" "RG_Shankar" 1635326423
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1440.tfm" 1617738065 1536 3290a75021d32d016616fe527bc9884c ""
@@ -94,6 +94,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1627447406 5065252 bcee0692f299aea3b1d13d4b7b7296ae ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1627447394 2812685 c5960af1705249fd1e77e94896ab4041 ""
+  "RG_Shankar.aux" 1635326423 6864 88b01af2c376eaebc5533ab970d7c93a "pdflatex"
+  "RG_Shankar.out" 1635326423 2215 cace11ead9ba91ce6fbea607ef632b60 "pdflatex"
+  "RG_Shankar.tex" 1635326420 44488 fb762e18c0e7702c53b6497ca78f5510 ""
+  "RG_Shankar.toc" 1635326423 1023 7d31a6a3d7c58df7240a1a84e857bac2 "pdflatex"
   "figures/fermi-rg.pdf" 1635312554 5558 767fd507d933d3424e497bc9fd056a0b ""
   "figures/overlap.pdf" 1635312554 4479 1f48a83bec6e18d4835419448cfd4f43 ""
   "figures/overlap_survive.pdf" 1635312554 5092 9e36ac6a6857a1eecef9818cdaeb01ed ""
@@ -102,13 +106,9 @@
   "figures/term3.pdf" 1635312554 21169 37b2618b12496b67dc64dd3602e42022 ""
   "figures/term6.pdf" 1635312554 10643 debbf3f0e7cc2daed0b9024fb06a155e ""
   "figures/tree_quadratic.pdf" 1635312554 4768 6204de799bef7f9a30a96db7f51b47f2 ""
-  "sol3.aux" 1635325239 6864 88b01af2c376eaebc5533ab970d7c93a "pdflatex"
-  "sol3.out" 1635325239 2215 cace11ead9ba91ce6fbea607ef632b60 "pdflatex"
-  "sol3.tex" 1635325237 44488 fb762e18c0e7702c53b6497ca78f5510 ""
-  "sol3.toc" 1635325239 1023 7d31a6a3d7c58df7240a1a84e857bac2 "pdflatex"
   (generated)
-  "sol3.toc"
-  "sol3.out"
-  "sol3.log"
-  "sol3.aux"
-  "sol3.pdf"
+  "RG_Shankar.pdf"
+  "RG_Shankar.out"
+  "RG_Shankar.toc"
+  "RG_Shankar.aux"
+  "RG_Shankar.log"
