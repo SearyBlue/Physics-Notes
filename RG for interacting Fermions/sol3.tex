@@ -9,7 +9,7 @@
 \maketitle
 \tableofcontents
 \clearpage
-\section{Summary of Renormalization Group}
+\section{Short primer on the renormalization group}
 The philosophy of the renormalization group approach is to integrate out high energy modes from a microscopic Hamiltonian and observe how the couplings morph in the process. This allows us to write down a low-energy effective Hamiltonian for the problem which can be used to describe low-energy excitations as well as universal features which depend on the short-distance details only through a small number of couplings which are, as a result, termed to be \textit{relevant}.
 
 Say we have a free energy \(\mathcal{F}\), characterized by a scalar field \(\phi\). The partition function can be written as a path integral over all configurations of \(\phi_k\):
@@ -71,11 +71,11 @@ We can now compare the free energies \(\mathcal{F}(\phi)\) and \(\mathcal{F}_b(\
 \section{Setting up the problem of interacting fermions}
 The problem we are trying to solve is that of interacting Fermions placed in the two-dimensional continuum. The Fermi surface will be spherical. The Hamiltonian for  the non-interacting system is very simple:
 \begin{equation}\begin{aligned}
-\mathcal{H} = \int d\mathbf{K}\; \xi(\mathbf{K})\hat n(\mathbf{K})
+\mathcal{H} = \int d\mathbf{K}\; E(\mathbf{K})\hat n(\mathbf{K})
 \end{aligned}\end{equation}
-where \(\xi\) is the single particle dispersion, \(\mathbf K\) is the momentum and \(\hat n = \psi^\dagger \psi\) is the number operator. Our goal is to determine what happens when we bring interactions into the problem. The action for the non-interacting case is determined by calculating the partition function. The partition function turns out to be
+where \(E\) is the single particle dispersion, \(\mathbf K\) is the momentum and \(\hat n = \psi^\dagger \psi\) is the number operator. Our goal is to determine what happens when we bring interactions into the problem. The action for the non-interacting case is determined by calculating the partition function. The partition function turns out to be
 \begin{equation}\begin{aligned}
-	Z = \int \mathcal{D}\psi^\dagger \mathcal{D}\psi\exp\left\{\int d\tau\;d\mathbf{K}\;\psi_\mathbf{K,\sigma}^\dagger\left(\frac{\partial}{\partial \tau} - \xi_\mathbf{K,\sigma} \right)\psi_\mathbf{K,\sigma}\right\}
+	Z = \int \mathcal{D}\psi^\dagger \mathcal{D}\psi\exp\left\{\int d\tau\;d\mathbf{K}\;\psi_\mathbf{K,\sigma}^\dagger\left(\frac{\partial}{\partial \tau} - E_\mathbf{K,\sigma} \right)\psi_\mathbf{K,\sigma}\right\}
 \end{aligned}\end{equation}
 Using the Fourier transform
 \begin{equation}\begin{aligned}
@@ -83,9 +83,9 @@ Using the Fourier transform
 \end{aligned}\end{equation}
 the action can be expressed as an integral over the energy \(\omega\).
 \begin{equation}\begin{aligned}
-	S_0 &= \int d\tau\;d\mathbf{K}\;\int d\omega e^{-i\omega \tau}\psi_\mathbf{K,\sigma}^\dagger(\omega)\left(\frac{\partial}{\partial \tau} - \xi_\mathbf{K,\sigma} \right)\int d\omega^\prime e^{i\omega^\prime \tau}\psi_\mathbf{K,\sigma}(\omega^\prime)\\
-	    &= \int d\mathbf{K}\;\int d\omega d\omega^\prime \psi_\mathbf{K,\sigma}^\dagger(\omega)\left(i\omega^\prime - \xi_\mathbf{K,\sigma} \right) \psi_\mathbf{K,\sigma}(\omega^\prime)\int d\tau e^{i\left(\omega^\prime - \omega\right)\tau}\\
-	    &= \int d\omega\;d\mathbf{K}\; \psi_{\mathbf K,\sigma}^\dagger \left(i\omega - \xi_{\mathbf{K},\sigma}\right)\psi_{\mathbf{K},\sigma}
+	S_0 &= \int d\tau\;d\mathbf{K}\;\int d\omega e^{-i\omega \tau}\psi_\mathbf{K,\sigma}^\dagger(\omega)\left(\frac{\partial}{\partial \tau} - E_\mathbf{K,\sigma} \right)\int d\omega^\prime e^{i\omega^\prime \tau}\psi_\mathbf{K,\sigma}(\omega^\prime)\\
+	    &= \int d\mathbf{K}\;\int d\omega d\omega^\prime \psi_\mathbf{K,\sigma}^\dagger(\omega)\left(i\omega^\prime - E_\mathbf{K,\sigma} \right) \psi_\mathbf{K,\sigma}(\omega^\prime)\int d\tau e^{i\left(\omega^\prime - \omega\right)\tau}\\
+	    &= \int d\omega\;d\mathbf{K}\; \psi_{\mathbf K,\sigma}^\dagger \left(i\omega - E_{\mathbf{K},\sigma}\right)\psi_{\mathbf{K},\sigma}
 \end{aligned}\end{equation}
 
 We now modify the setup to suit the problem better. The Pauli exclusion principle ensures that all states up to the Fermi momentum \(\mathbf{k}_F\) are filled, in the ground state. Excitations, then, involve adding Fermions above the Fermi momentum and deleting electrons below the Fermi momentum. To this end, we can define an electron at the Fermi energy \(E_F\) to have zero energy and measure the energy of excitations from the Fermi surface: \(\xi_{\mathbf K} = E_{\mathbf K} - E_F\).

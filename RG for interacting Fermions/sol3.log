@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.8)  27 OCT 2021 10:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.28)  27 OCT 2021 14:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -522,18 +522,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 441--453
 
 [18 <./figures/term6.pdf>] [19] (./sol3.aux)
 Package rerunfilecheck Info: File `sol3.out' has not changed.
-(rerunfilecheck)             Checksum: 985FE4A4DE890CA6E55E216BF3F7B2CB;2164.
+(rerunfilecheck)             Checksum: CACE11EAD9BA91CE6FBEA607EF632B60;2215.
  ) 
 Here is how much of TeX's memory you used:
  10833 strings out of 478994
  162595 string characters out of 5864751
- 466863 words of memory out of 5000000
+ 466872 words of memory out of 5000000
  28051 multiletter control sequences out of 15000+600000
  412252 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,15n,74p,888b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on sol3.pdf (19 pages, 388868 bytes).
+Output written on sol3.pdf (19 pages, 388862 bytes).
 PDF statistics:
  372 PDF objects out of 1000 (max. 8388607)
  322 compressed objects within 4 object streams
