@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{braket,amsmath,graphicx,caption}
+\usepackage[margin=0.7in]{geometry}
+
+\begin{document}
+\title{\bf Lightning-quick introduction to dynamical mean field theory}
+\author{Abhirup Mukherjee}
+\maketitle
+\abstract{This is a very short introduction to the philosophy and algorithm of dynamical mean field theory (DMFT). I brought these points together and wrote this up mostly to cement my own understanding of the topic.}
+
+\section{Refresher on (static) mean field theory}
+The Curie-Weiss version of mean field theory involves replacing the spatial fluctuations in the Hamiltonian or the energy by an effective static field. The static field has to be determined self-consistently. To see what this means, we take the canonical example of the Ising model. Its Hamiltonian is given by
+\begin{equation}\begin{aligned}
+	H = J\sum_{\left<ij \right>} S_i^z S_j^z = J\sum_i S_i^z \sum_{j \in \text{NN of }i}S_j^z
+\end{aligned}\end{equation}
+In order to introduce the mean-field, we replace the spins \(S_j^z\) of the nearest-neighbour sites by their average value \(\left<S_j^z\right> \equiv m_j\):
+\begin{equation}\begin{aligned}
+	H_\text{MF} = J\sum_i S_i^z \sum_{j \in \text{NN of }i}m_j
+\end{aligned}\end{equation}
+Because of translation symmetry, we expect the average local magnetisation to be independent of the position \(j\): \(m_j \equiv m_\text{loc}\). If \(z\) is the coordination number of the lattice, we get
+\begin{equation}\begin{aligned}
+	H_\text{MF} = J\sum_i S_i^z z m = h_\text{MF} \sum_i S_i^z,
+\end{aligned}\end{equation}
+where we have defined the static mean field \(h_\text{MF} \equiv Jzm_\text{loc}\). This mean field Hamiltonian is solvable, in terms of \(h_\text{MF}\). The mean-field itself, however, is still unknown. To determine it, we will use the fact that if our approach is to be internally consistent, the average magnetisation \(\left<S_i^z \right>\) obtained from the mean-field Hamiltonian \(H_\text{MF}\) should be equal to that defined before, \(m_\text{loc}\). This is again demanded on grounds of translation invariance. Since \(H_\text{MF}\) just consists of decoupled spins, the local Hamiltonian has two solutions: \(S_i^z = \pm \frac{1}{2}\) with energies \(\pm \frac{h_\text{MF}}{2}\). The local partition function \(Z_\text{MF}\) and hence the magnetisation at site \(i\) is then obtained easily:
+\begin{equation}\begin{aligned}
+	Z_\text{MF} = 2\cosh \left(\beta h_\text{MF}/2\right), m = \frac{1}{Z_\text{MF}}\sum_{S_i^z = \pm \frac{1}{2}} S_i^z e^{-\beta h_\text{MF}S_i^z} = \tanh \left(\beta h_\text{MF}/2\right)
+\end{aligned}\end{equation}
+The self-consistency equation takes the form
+\begin{equation}\begin{aligned}
+	m_\text{loc} = m = \tanh \left(\beta Jzm_\text{loc}/2\right)
+\end{aligned}\end{equation}
+This equation now has to be solved numerically, to obtain the value of the local magnetisation \(m_\text{loc}\). This is the general approach to the mean field approximation: 
+\begin{itemize}
+	\item replace the fluctuations by an effective local mean field \(y_\text{loc}\), in order to obtain a simpler problem (the simplified Hamiltonian \(H_\text{MF}\),
+	\item solve the simpler problem at a particular local site \(i\) to calculate the mean field \(y_i\) from it, and
+	\item demand that a self-consistent solution should have \(y_i = y_\text{loc}\), and solve this equation.
+\end{itemize}
+
+
+
+\end{document}
