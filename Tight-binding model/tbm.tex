@@ -1,14 +1,18 @@
-\documentclass{article}
-\usepackage{braket,amsmath,graphicx,caption}
-\usepackage[margin=0.7in]{geometry}
+\documentclass[12pt,onecolumn]{revtex4-2}
+\usepackage{braket,amsmath,graphicx,setspace,caption}
+\usepackage[hidelinks]{hyperref}
+\usepackage[margin=0.8in]{geometry}
+\setlength{\fboxrule}{1pt}%
+\setstretch{1}
 \DeclareMathOperator{\sech}{sech}
-\allowdisplaybreaks
 
 \begin{document}
 \title{\bf The tight-binding model on the 2D square lattice}
 \author{Abhirup Mukherjee}
+\begin{abstract}
+This is a quick introduction to the tight-binding problem on a 2D square lattice. I describe how it can be obtained from a more general model, its solution and some of its important properties like the isoenergetic contours and van Hove singularities.
+\end{abstract}
 \maketitle
-\abstract{This is a quick introduction to the tight-binding problem on a 2D square lattice. I describe how it can be obtained from a more general model, its solution and some of its important properties like the isoenergetic contours and van Hove singularities.}
 
 \section{Single-particle Hamiltonian viewpoint}
 This method deals with the situation in which the local atomic orbitals are a good approximation to the full problem, and fairly good solutions can be obtained by adding corrections to the local wavefunctions. We start by separating the full Hamiltonian into a local and a non-local piece:

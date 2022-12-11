@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.17)  4 DEC 2022 15:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.17)  12 DEC 2022 00:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,8 +8,8 @@ entering extended mode
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+(/usr/share/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -321,12 +321,12 @@ LaTeX Info: Redefining \nameref on input line 5.
 * \topmargin=-73.135pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -338,8 +338,8 @@ LaTeX Info: Redefining \nameref on input line 5.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<./figures/fermi-rg.pdf, id=72, 1555.61755pt x 2503.77203pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<./figures/fermi-rg.pdf, id=82, 1555.61755pt x 2503.77203pt>
 File: ./figures/fermi-rg.pdf Graphic file (type pdf)
 <use ./figures/fermi-rg.pdf>
 Package pdftex.def Info: ./figures/fermi-rg.pdf  used on input line 121.
@@ -350,8 +350,8 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 122.
 See the caption package documentation for explanation.
 
-[2] [3 <./figures/fermi-rg.pdf>]
-<./figures/tree_quadratic.pdf, id=111, 336.40025pt x 80.61697pt>
+[3] [4 <./figures/fermi-rg.pdf>]
+<./figures/tree_quadratic.pdf, id=108, 336.40025pt x 80.61697pt>
 File: ./figures/tree_quadratic.pdf Graphic file (type pdf)
 <use ./figures/tree_quadratic.pdf>
 Package pdftex.def Info: ./figures/tree_quadratic.pdf  used on input line 160.
@@ -363,12 +363,17 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 6001) in paragraph at lines 161--161
-[]\OT1/cmr/m/n/10 Figure 2: |[]Momentum-conserving
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+[]\OT1/cmr/m/n/12 Figure 2: |[]Momentum-
  []
 
-[4 <./figures/tree_quadratic.pdf>]
-<./figures/term.pdf, id=134, 367.72507pt x 319.70663pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+\OT1/cmr/m/n/12 conserving quadratic in-ter-
+ []
+
+[5 <./figures/tree_quadratic.pdf>]
+<./figures/term.pdf, id=131, 367.72507pt x 319.70663pt>
 File: ./figures/term.pdf Graphic file (type pdf)
 <use ./figures/term.pdf>
 Package pdftex.def Info: ./figures/term.pdf  used on input line 208.
@@ -380,12 +385,12 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 209--209
-[]\OT1/cmr/m/n/10 Figure 3: |[]Tree-level four-Fermion
+Underfull \hbox (badness 7832) in paragraph at lines 209--209
+[]\OT1/cmr/m/n/12 Figure 3: |[]Tree-level four-
  []
 
-[5 <./figures/term.pdf>]
-<./figures/term2.pdf, id=156, 651.69829pt x 651.69829pt>
+[6 <./figures/term.pdf>] [7]
+<./figures/term2.pdf, id=164, 651.69829pt x 651.69829pt>
 File: ./figures/term2.pdf Graphic file (type pdf)
 <use ./figures/term2.pdf>
 Package pdftex.def Info: ./figures/term2.pdf  used on input line 293.
@@ -401,13 +406,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 279--297
 
  []
 
-[6 <./figures/term2.pdf>] [7]
-<./figures/term3.pdf, id=200, 936.49649pt x 491.58908pt>
+[8 <./figures/term2.pdf>] [9]
+<./figures/term3.pdf, id=204, 936.49649pt x 491.58908pt>
 File: ./figures/term3.pdf Graphic file (type pdf)
 <use ./figures/term3.pdf>
 Package pdftex.def Info: ./figures/term3.pdf  used on input line 385.
 (pdftex.def)             Requested size: 271.0125pt x 142.26463pt.
-
+ [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 398.
@@ -416,7 +421,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 398.
 
-[8 <./figures/term3.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 404.
@@ -425,17 +429,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 404.
 
-<./figures/overlap.pdf, id=223, 583.94081pt x 350.48578pt>
+[11 <./figures/term3.pdf>]
+<./figures/overlap.pdf, id=234, 583.94081pt x 350.48578pt>
 File: ./figures/overlap.pdf Graphic file (type pdf)
 <use ./figures/overlap.pdf>
 Package pdftex.def Info: ./figures/overlap.pdf  used on input line 417.
 (pdftex.def)             Requested size: 216.80669pt x 130.12692pt.
-<./figures/overlap_survive.pdf, id=225, 489.39903pt x 348.73154pt>
+<./figures/overlap_survive.pdf, id=236, 489.39903pt x 348.73154pt>
 File: ./figures/overlap_survive.pdf Graphic file (type pdf)
 <use ./figures/overlap_survive.pdf>
 Package pdftex.def Info: ./figures/overlap_survive.pdf  used on input line 426.
 (pdftex.def)             Requested size: 189.71205pt x 135.18527pt.
-[9 <./figures/overlap.pdf>]
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 440.
@@ -448,11 +453,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\prime' on input line 440.
 
-<./figures/term6.pdf, id=240, 698.9551pt x 385.24274pt>
+[12 <./figures/overlap.pdf>]
+<./figures/term6.pdf, id=251, 698.9551pt x 385.24274pt>
 File: ./figures/term6.pdf Graphic file (type pdf)
 <use ./figures/term6.pdf>
 Package pdftex.def Info: ./figures/term6.pdf  used on input line 453.
 (pdftex.def)             Requested size: 173.446pt x 95.59329pt.
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 454.
@@ -463,26 +470,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 447--459
 
  []
 
-[10 <./figures/overlap_survive.pdf> <./figures/term6.pdf
+[13 <./figures/overlap_survive.pdf> <./figures/term6.pdf
 
 pdfTeX warning: pdflatex (file ./figures/term6.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [11] (./RG_Shankar.aux)
+>] [14] (./RG_Shankar.aux)
 Package rerunfilecheck Info: File `RG_Shankar.out' has not changed.
 (rerunfilecheck)             Checksum: CACE11EAD9BA91CE6FBEA607EF632B60;2215.
  ) 
 Here is how much of TeX's memory you used:
- 10859 strings out of 478238
- 174291 string characters out of 5850455
- 488613 words of memory out of 5000000
- 28855 multiletter control sequences out of 15000+600000
- 477477 words of font info for 56 fonts, out of 8000000 for 9000
+ 10861 strings out of 478238
+ 174359 string characters out of 5850455
+ 486703 words of memory out of 5000000
+ 28857 multiletter control sequences out of 15000+600000
+ 478390 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,15n,63p,894b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on RG_Shankar.pdf (11 pages, 324140 bytes).
+ 60i,15n,63p,894b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on RG_Shankar.pdf (14 pages, 291181 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 307 compressed objects within 4 object streams
- 118 named destinations out of 1000 (max. 500000)
+ 383 PDF objects out of 1000 (max. 8388607)
+ 309 compressed objects within 4 object streams
+ 121 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,13 +1,19 @@
-\documentclass{article}
-\usepackage{braket,amsmath,graphicx,color,caption}
+\documentclass[12pt,onecolumn]{revtex4-2}
+\usepackage{braket,amsmath,graphicx,setspace}
 \usepackage[hidelinks]{hyperref}
-\usepackage[margin=0.7in]{geometry}
+\usepackage[margin=0.8in]{geometry}
+\setlength{\fboxrule}{1pt}%
+\setstretch{1}
 \usepackage{common}
+
 \begin{document}
 \title{\textbf{Topological significance of the crystal momentum}}
-\author{Abhirup Mukherjee}
+\author{Abhirup Mukherjee\\[5pt]
+(Last updated: \today)}
+\begin{abstract}
+	This is a re-working of R. Rajaraman's demonstration that the tight-binding dispersion can be obtained by treating the problem of electrons moving in a periodic potential in terms of instantons. This has the advantage that the crystal momentum can be identified as a topological winding number.
+\end{abstract}
 \maketitle
-\abstract{This is a re-working of R. Rajaraman's demonstration that the tight-binding dispersion can be obtained by treating the problem of electrons moving in a periodic potential in terms of instantons. This has the advantage that the crystal momentum can be identified as a topological winding number.}
 \section{Simple derivation of Bloch's theorem}
 
 For the case of electrons moving in a periodic single-particle potential, the plane wave solutions get modified simply through a modulation:
