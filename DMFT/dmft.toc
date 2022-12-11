@@ -1,0 +1,9 @@
+\contentsline {title}{\bf Lightning-quick introduction to single site dynamical mean field theory}{1}{section*.2}%
+\contentsline {abstract}{Abstract}{1}{section*.1}%
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{1}{section*.3}%
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}Refresher on (static) mean field theory}{1}{section*.4}%
+\contentsline {section}{\numberline {II}Dynamical mean field theory - what's the big idea?}{3}{section*.5}%
+\contentsline {section}{\numberline {III}Derivation of the DMFT self-consistency equation for the Hubbard model}{4}{section*.6}%
+\contentsline {section}{\numberline {IV}The algorithm of the self-consistency loop}{5}{section*.7}%
